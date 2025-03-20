@@ -26,6 +26,6 @@ int main()
 	addcl.sin_port = htons(PORT);
 
 	sendto(client_fd, mess, BUFFER_SIZE, 0, (struct sockaddr*)&addcl, (socklen_t)addr_len);
-
+	
 	close(client_fd);
 }
